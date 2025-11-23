@@ -26,10 +26,7 @@ async function getChannelList(workspace_id) {
     return response;
 }
 
-//POST /api/workspace/:workspace_id/channels
-//Crea un nuevo canal
-//Debes pasar por body el name
-//body example: {name: 'general'}
+
 async function createChannel(workspace_id, channel_name) {
         const body = { name: channel_name };
         const response_http = await fetch(
