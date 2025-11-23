@@ -4,8 +4,6 @@
 
 import ENVIRONMENT from "../config/environment";
 import { AUTH_TOKEN_KEY } from "../Context/AuthContext";
-import ChannelRepository from "../../../2025_UTN_TM_PWA_OCTUBRE_LUN_MIER_BACKEND/src/repositories/channel.repository";
-import MessagesChannelRepository from "../../../2025_UTN_TM_PWA_OCTUBRE_LUN_MIER_BACKEND/src/repositories/messageChannel.repository";
 
 //Obtiene la lista de canales
 async function getChannelList(workspace_id) {
