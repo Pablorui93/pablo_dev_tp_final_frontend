@@ -1,0 +1,53 @@
+.workspace-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.column-1{
+    width: 5%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(63,14,64);
+}
+
+.column-1 div{
+    display: flex;
+    flex-direction: column;
+}
+
+.column-1-1{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-1-2{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding: 10px;
+    color: white;
+}
+.d2{
+    width: 35%;
+    height: 100%;
+    background-color: rgb(80,38,82);
+    color: white;
+}
+
+.d3{
+    width: 65%;
+    height: 100%;
+    overflow: auto;
+}
+

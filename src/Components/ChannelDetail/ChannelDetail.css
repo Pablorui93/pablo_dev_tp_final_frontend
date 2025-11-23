@@ -1,0 +1,13 @@
+.container-messages{
+    width: 65%;
+    height: 100%;
+}
+
+.component-message{
+    width: 65%;
+    
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+}
+

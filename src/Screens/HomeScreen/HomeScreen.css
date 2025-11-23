@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: white; 
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    padding-bottom: 50px; 
+    background-color: white; 
+}
+
+
+.home-topbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    flex-shrink: 0;
+}
+
+.slack-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.slack-logo-icon {
+    height: 20px;
+}
+
+.slack-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #4A154B;
+}
+
+.topbar-actions {
+    font-size: 14px;
+    color: #616061;
+}
+
+.link-action {
+    color: #1264a3;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+
+.main-content {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+    text-align: center;
+    flex-grow: 1; 
+}
+
+.welcome-title {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1d1c1d;
+    margin: 30px 0 10px 0;
+}
+
+.welcome-subtitle {
+    font-size: 18px;
+    color: #616061;
+    margin-bottom: 40px;
+}
+
+.user-email-info {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1d1c1d;
+    margin-bottom: 10px;
+}
+
+.error-message {
+    color: #e01e5a;
+    background-color: #fbe4e9;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+
+.workspace-list {
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.workspace-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    background-color: #f8f8f8; 
+    border: 1px solid #eeeeee;
+    padding: 15px 20px;
+    border-radius: 8px;
+    transition: background-color 0.1s, border-color 0.1s;
+}
+
+.workspace-card:hover {
+    background-color: #f4f4f4;
+    border-color: #dddddd;
+}
+
+.card-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.card-avatar {
+    width: 48px;
+    height: 48px;
+    background-color: #e01e5a; 
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    flex-shrink: 0;
+}
+
+.workspace-title {
+    font-size: 18px;
+    font-weight: 900;
+    color: #1d1c1d;
+    margin: 0 0 4px 0;
+    text-align: left;
+}
+
+.workspace-meta {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #616061;
+    gap: 5px;
+}
+
+.meta-icon {
+    color: #616061;
+}
+
+.separator {
+    color: #ccc;
+    font-size: 10px;
+}
+
+.card-arrow {
+    color: #616061;
+    flex-shrink: 0;
+}
+
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #616061;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 30px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #dddddd;
+}
+
+.divider::before {
+    margin-right: 15px;
+}
+
+.divider::after {
+    margin-left: 15px;
+}
+
+.create-new-section {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.create-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #f8f8f8;
+    border: 1px solid #eeeeee;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1d1c1d;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.create-button:hover {
+    background-color: #f4f4f4;
+}
+
+.create-button span:first-child {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.create-icon {
+    color: #616061;
+}
+
+.footer-links {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+    padding: 0 20px;
+    font-size: 13px;
+    color: #616061;
+}
+
+.marketing-checkbox {
+    display: block;
+    text-align: left;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.marketing-checkbox input {
+    margin-right: 10px;
+}
+
+.legal-links a {
+    color: #1264a3;
+    text-decoration: none;
+}
+
+.legal-links a:hover {
+    text-decoration: underline;
+}
+
+.back-button-debug {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #4A154B;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+}

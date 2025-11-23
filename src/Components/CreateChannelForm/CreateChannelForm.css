@@ -1,0 +1,134 @@
+.add{
+    color: #4a154b;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 1000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.channel-form-container {
+    padding: 1rem;
+    background-color: white; 
+    border-top: 1px solid #ddd;
+}
+
+.channel-create-button {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: #f8f8f8;
+    border: none;
+    color: #4a154b;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 150ms;
+    text-align: left;
+}
+
+.channel-create-button:hover {
+    color: #350d36;
+}
+
+.channel-create-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+.channel-form-modal {
+    padding: 16px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    max-width: 350px;
+    width: 90%;
+    z-index: 1001; 
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+.modal-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #333;
+}
+.close-button {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+}
+.channel-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.hash-icon {
+    position: absolute;
+    left: 10px;
+    color: #999;
+}
+.channel-input {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 150ms;
+}
+.channel-input:focus {
+    border-color: #007a5a;
+    outline: none;
+    box-shadow: 0 0 0 1px #007a5a;
+}
+.submit-button {
+    padding: 10px;
+    background-color: #007a5a; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 150ms;
+}
+.submit-button:hover:not(:disabled) {
+    background-color: #005a41;
+}
+.submit-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+.status-loading { color: #2563eb; font-style: italic; }
+.status-error { color: #dc2626; padding: 5px; background-color: #fee2e2; border-radius: 4px; }
+.status-success { color: #10b981; padding: 5px; background-color: #d1fae5; border-radius: 4px; }

@@ -1,0 +1,207 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.login-page {
+
+    height: 100vh; 
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background-color: #fff;
+    padding: 15px 15px 5px 15px; 
+}
+
+
+.login-header {
+    text-align: center;
+    margin-bottom: 15px; 
+    max-width: 400px;
+}
+
+.slack-logo {
+    height: 15px;
+}
+
+.slack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 31px;
+    margin-top: 20px;
+}
+
+.name-slack {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+.login-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #1d1c1d;
+    margin: 0 0 10px 0;
+    line-height: 38px;
+}
+
+.sub-header {
+    font-size: 15px;
+    color: #454245;
+    margin: 0;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 300px;
+}
+
+.form-field {
+    margin-bottom: 10px; 
+    max-height: 100px;
+}
+
+.form-field label {
+    display: none;
+}
+
+.input-slack {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #1d1c1d4d;
+}
+
+.input-slack:focus {
+    outline: none;
+    border-color: #1264a3;
+    box-shadow: 0 0 0 4px #1d9bd11a;
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: #4A154B;
+    color: white;
+    font-weight: 900;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #3a113b;
+}
+
+.btn-primary:disabled {
+    background-color: #dddddd;
+    color: #888;
+}
+
+
+.message-error {
+    color: #e01e5a;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+    background: #fbe4e9;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.message-success {
+    color: #007a5a;
+    background: #d4f3e6;
+    padding: 10px;
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 0; 
+    color: #616061;
+    font-size: 12px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #dddddd;
+}
+
+.divider:not(:empty)::before {
+    margin-right: 10px;
+}
+
+.divider:not(:empty)::after {
+    margin-left: 10px;
+}
+
+
+.social-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 10px; 
+}
+
+.btn-social {
+    flex: 1;
+    background: white;
+    border: 2px solid #dddddd;
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #1d1c1d;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.2s;
+}
+
+.btn-social:hover {
+    background-color: #f8f8f8;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+
+.login-footer {
+    margin-top: auto; 
+    margin-bottom: 0; 
+    font-size: 12px;
+    color: #696969;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.login-footer a {
+    color: #696969;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+    color: #1264a3;
+}

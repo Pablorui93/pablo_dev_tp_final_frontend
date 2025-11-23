@@ -1,0 +1,179 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+.login-page { 
+    height: 100vh; 
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background-color: #fff;
+    padding: 10px 15px; 
+}
+
+
+.login-header {
+    text-align: center;
+    margin-bottom: 20px; 
+    max-width: 400px;
+}
+
+.slack-logo {
+    height: 15px;
+}
+
+.slack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 31px;
+    margin-bottom: 5px;
+}
+
+.name-slack {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.login-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #1d1c1d;
+    margin: 0 0 10px 0;
+    line-height: 38px;
+}
+
+.sub-header {
+    font-size: 15px;
+    color: #454245;
+    margin: 0;
+}
+
+
+.form-container {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 8px;
+}
+
+.form-field {
+    margin-bottom: 12px;
+}
+
+
+.form-field label {
+    display: none; 
+}
+
+.input-slack {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #1d1c1d4d;
+    transition: border-color 0.2s;
+}
+
+.input-slack:focus {
+    outline: none;
+    border-color: #1264a3;
+    box-shadow: 0 0 0 4px #1d9bd11a;
+}
+
+
+.btn-primary {
+    width: 100%;
+    background-color: #4A154B;
+    color: white;
+    font-weight: 900;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 5px; 
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #3a113b;
+}
+
+.btn-primary:disabled {
+    background-color: #dddddd;
+    color: #888;
+}
+
+
+.message-error {
+    color: #e01e5a;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+    background: #fbe4e9;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.message-success {
+    color: #007a5a;
+    background: #d4f3e6;
+    padding: 10px;
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 15px 0 15px 0; 
+    color: #616061;
+    font-size: 14px;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #dddddd;
+}
+
+.divider:not(:empty)::before { margin-right: 10px; }
+.divider:not(:empty)::after { margin-left: 10px; }
+
+
+
+.login-footer {
+    margin-top: 8px; 
+    margin-bottom: 0; 
+    font-size: 12px; 
+    color: #696969;
+    text-align: center;
+    padding-bottom: 0; 
+}
+
+.login-footer a {
+    color: #696969;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+    color: #1264a3;
+}
