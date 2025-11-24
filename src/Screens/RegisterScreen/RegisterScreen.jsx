@@ -4,6 +4,7 @@ import useForm from '../../hooks/useForm'
 import { register } from '../../services/authService'
 import useFetch from '../../hooks/useFetch'
 import './RegisterScreen.css' 
+import { Link } from 'react-router'
 
 const RegisterScreen = () => {
 
@@ -111,7 +112,7 @@ const RegisterScreen = () => {
                     <div className="divider">O YA TIENES CUENTA</div>
 
                     <p className="sub-header" style={{ textAlign: 'center' }}>
-                        <a href="/login">Ir a Iniciar Sesión</a>
+                        <Link href="/login">Ir a Iniciar Sesión</Link>
                     </p>
 
                 </form>
