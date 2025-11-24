@@ -1,13 +1,13 @@
 import React, { useContext, useEffect } from 'react'
-import { useLocation, useNavigate } from 'react-router' // Asegúrate de que sea 'react-router-dom' si usas v6
+import { useLocation, useNavigate } from 'react-router'
 import { login } from '../../services/authService'
 import useForm from '../../hooks/useForm'
 import useFetch from '../../hooks/useFetch'
 import { AuthContext } from '../../Context/AuthContext'
-import './LoguinScreen.css' // <--- IMPORTANTE: Importar el CSS
+import { Link } from 'react-router'
+import './LoguinScreen.css' 
 
 const LoginScreen = () => {
-  const navigate = useNavigate()
   const location = useLocation()
   const { onLogin } = useContext(AuthContext)
 
@@ -15,7 +15,7 @@ const LoginScreen = () => {
     const query = new URLSearchParams(location.search)
     const from = query.get('from')
     if (from === 'verified_email') {
-      // Sugerencia: Usar un estado para mostrar esto en el UI en vez de alert
+
       alert('Has validado tu mail exitosamente')
     }
   }, [])
@@ -57,10 +57,9 @@ const LoginScreen = () => {
 
   return (
     <div className="login-page">
-
-      {/* HEADER: Logo y Títulos */}
       <header className="login-header">
         <div className='slack'>
+        <Link className="register-link" to="/register">Registrate</Link>
           <img
             src="https://a.slack-edge.com/80588/marketing/img/icons/icon_slack_hash_colored.png"
             alt="Slack Logo"
@@ -110,10 +109,8 @@ const LoginScreen = () => {
           </button>
         </form>
 
-        {/* DIVISOR */}
         <div className="divider">OTRAS OPCIONES</div>
 
-        {/* BOTONES SOCIALES (Visuales) */}
         <div className="social-buttons">
           <button className="btn-social" type="button">
             {/* Google G simple icon SVG */}
@@ -129,11 +126,10 @@ const LoginScreen = () => {
 
       </div>
 
-      {/* FOOTER */}
       <footer className="login-footer">
         <a href="#">Privacidad y términos</a>
         <a href="#">Contactarnos</a>
-        <a href="#">Cambiar región ⌄</a>
+        <a href="#">Cambiar región </a>
       </footer>
 
     </div>

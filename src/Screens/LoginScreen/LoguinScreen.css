@@ -131,7 +131,11 @@ body {
     margin-bottom: 10px;
 }
 
-
+.register-link{
+    position: fixed;
+    top: 0;
+    left: 900px;
+}
 .divider {
     display: flex;
     align-items: center;
