@@ -135,6 +135,7 @@ body {
     position: fixed;
     top: 0;
     left: 900px;
+    text-decoration: none;
 }
 .divider {
     display: flex;
@@ -208,4 +209,20 @@ body {
 .login-footer a:hover {
     text-decoration: underline;
     color: #1264a3;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .register-link{
+        top: 0;
+        left: 0;
+        text-decoration: none;
+    }
+
+    .login-header{
+        width: 300px;
+    }
+
+    /* .login-header h1{
+        font-size: 24px;
+    } */
 }
