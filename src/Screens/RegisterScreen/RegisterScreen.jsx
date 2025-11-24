@@ -112,7 +112,7 @@ const RegisterScreen = () => {
                     <div className="divider">O YA TIENES CUENTA</div>
 
                     <p className="sub-header" style={{ textAlign: 'center' }}>
-                        <Link href="/login">Ir a Iniciar Sesión</Link>
+                        <Link to="/login">Ir a Iniciar Sesión</Link>
                     </p>
 
                 </form>
