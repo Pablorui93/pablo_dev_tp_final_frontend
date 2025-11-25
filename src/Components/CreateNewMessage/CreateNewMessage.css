@@ -5,3 +5,14 @@
 div form button{
     background-color: rgb(86, 248, 86);
 }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    form {
+        display: flex;
+        flex-direction: column
+    }
+
+    div form button {
+        text-align: left;
+    }
+}
