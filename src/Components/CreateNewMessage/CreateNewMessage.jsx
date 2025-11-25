@@ -29,7 +29,7 @@ const CreateNewMessage = ({onSubmit}) => {
                     value={form_state[new_message_form_field.content]}
                     onChange={onInputChange}
                 />
-                <button type="submit">Enviar</button>
+                <button className='button-new-message' type="submit">Enviar</button>
             </form>
         </div>
     )

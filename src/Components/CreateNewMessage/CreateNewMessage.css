@@ -12,7 +12,7 @@ div form button{
         flex-direction: column
     }
 
-    div form button {
+    div form .button-new-message {
         text-align: left;
     }
 }
