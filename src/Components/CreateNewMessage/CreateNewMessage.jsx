@@ -1,5 +1,6 @@
 import React from 'react'
 import useForm from '../../hooks/useForm'
+import './CreateNewMessage.css'
 
 const CreateNewMessage = ({onSubmit}) => {
     const new_message_form_field={
@@ -19,7 +20,8 @@ const CreateNewMessage = ({onSubmit}) => {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <input 
+                <input
+                    className='input-form'
                     type="text"
                     placeholder="nuevo mensaje"
                     id="content"
@@ -27,7 +29,7 @@ const CreateNewMessage = ({onSubmit}) => {
                     value={form_state[new_message_form_field.content]}
                     onChange={onInputChange}
                 />
-                <button type="submit">Send</button>
+                <button type="submit">Enviar</button>
             </form>
         </div>
     )
